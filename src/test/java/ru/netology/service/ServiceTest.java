@@ -1,8 +1,8 @@
 package ru.netology.service;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class ServiceTest {
     @Test
@@ -11,7 +11,7 @@ public class ServiceTest {
         int amount = 900;
         int actual = service.remain(amount);
         int expected = 100;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
     @Test
     public void shouldService0() {
@@ -19,6 +19,6 @@ public class ServiceTest {
         int amount = 1000;
         int actual = service.remain(amount);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }
